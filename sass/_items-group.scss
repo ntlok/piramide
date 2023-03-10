@@ -4,7 +4,7 @@
 
 .items {
   width: 100%;
-  min-width: 300px;
+  // min-width: 300px;
   max-width: 340px;
   display: flex;
   flex-flow: column;
@@ -96,7 +96,7 @@
 }
 
 .banner-img {
-  margin-top: 80px;
+  margin-top: 110px;
 
   img {
     width: 100%;
@@ -124,11 +124,19 @@
         border: none;
       }
     }
+
+    h2 {
+      font-size: 21px;
+    }
   }
 
   .filters {
     display: flex;
     gap: 2rem;
+
+    @media (max-width: 460px) {
+      flex-direction: column;
+    }
 
     div {
       padding: .8rem;
@@ -140,6 +148,13 @@
     }
   }
 
+  .ultima-div {
+    @media (max-width:900px) {
+      display: none;
+      position: absolute;
+    }
+  }
+
   .show-item {
     max-width: 200px;
     width: 100%;
@@ -148,6 +163,7 @@
     border: 1px solid #E4E4E4;
     border-radius: 50px;
     overflow: hidden;
+
 
     button {
       background: none;

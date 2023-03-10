@@ -60,7 +60,7 @@ header.active {
   padding: 2rem;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 100px;
 }
 .header-group.shadow {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -743,7 +743,6 @@ footer {
 
 .items {
   width: 100%;
-  min-width: 300px;
   max-width: 340px;
   display: flex;
   flex-flow: column;
@@ -813,7 +812,7 @@ footer {
 }
 
 .banner-img {
-  margin-top: 80px;
+  margin-top: 110px;
 }
 .banner-img img {
   width: 100%;
@@ -834,9 +833,17 @@ footer {
 .items-header .title-container a:last-child {
   border: none;
 }
+.items-header .title-container h2 {
+  font-size: 21px;
+}
 .items-header .filters {
   display: flex;
   gap: 2rem;
+}
+@media (max-width: 460px) {
+  .items-header .filters {
+    flex-direction: column;
+  }
 }
 .items-header .filters div {
   padding: 0.8rem;
@@ -845,6 +852,12 @@ footer {
   border-radius: 50px;
   font-weight: 400;
   font-size: 14px;
+}
+@media (max-width: 900px) {
+  .items-header .ultima-div {
+    display: none;
+    position: absolute;
+  }
 }
 .items-header .show-item {
   max-width: 200px;
@@ -1692,6 +1705,11 @@ footer {
   border: 1px solid #DCDCDC;
   padding: 23px;
   gap: 20px;
+}
+@media (max-width: 440px) {
+  .lista-pedido .compra .product {
+    min-width: 0;
+  }
 }
 .lista-pedido .compra .valor {
   min-width: 100%;

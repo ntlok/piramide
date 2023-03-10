@@ -158,6 +158,12 @@
 
     gap: 20px;
 
+    .product {
+      @media (max-width: 440px) {
+        min-width: 0;
+      }
+    }
+
     .valor {
       min-width: 100%;
       justify-content: center;
