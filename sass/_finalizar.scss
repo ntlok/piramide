@@ -19,7 +19,7 @@
   background: #000;
   border-radius: 10px;
   border: none;
-  color: white;
+
   height: 56px;
   width: 165px;
   align-self: end;
@@ -28,6 +28,12 @@
 
   &:hover {
     filter: brightness(.9);
+  }
+
+  span {
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
   }
 }
 
@@ -137,4 +143,36 @@
 
   }
 
+}
+
+.lista-pedido {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .compra {
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #DCDCDC;
+    padding: 23px;
+
+    gap: 20px;
+
+    .valor {
+      min-width: 100%;
+      justify-content: center;
+
+      .valor-item {
+        width: 100%;
+        margin-right: 0;
+        padding: 0;
+      }
+
+      .valor-total {
+        width: 100%;
+        text-align: end;
+        padding: 0;
+      }
+    }
+  }
 }

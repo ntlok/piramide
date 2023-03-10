@@ -51,6 +51,7 @@ header {
 header.active {
   position: fixed;
   background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .header-group {
@@ -60,6 +61,8 @@ header.active {
   align-items: center;
   justify-content: space-between;
   height: 80px;
+}
+.header-group.shadow {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .header-group img,
@@ -810,7 +813,7 @@ footer {
 }
 
 .banner-img {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 .banner-img img {
   width: 100%;
@@ -883,7 +886,7 @@ footer {
 }
 
 .item-content {
-  margin-top: 100px;
+  margin-top: 140px;
   padding: 0 3rem;
   display: flex;
   gap: 2rem;
@@ -1414,7 +1417,7 @@ footer {
 .compra .valor {
   display: flex;
   margin-left: auto;
-  min-width: 300px;
+  min-width: 280px;
   justify-content: flex-end;
 }
 .compra .valor .valor-item {
@@ -1531,6 +1534,11 @@ footer {
   font-size: 14;
   font-weight: 700;
   cursor: pointer;
+}
+.resumo-pedido .finalizar span {
+  font-size: 14px;
+}
+.resumo-pedido .finalizar:hover {
   filter: brightness(0.9);
 }
 
@@ -1573,7 +1581,6 @@ footer {
   background: #000;
   border-radius: 10px;
   border: none;
-  color: white;
   height: 56px;
   width: 165px;
   align-self: end;
@@ -1581,6 +1588,11 @@ footer {
 }
 .continuar:hover {
   filter: brightness(0.9);
+}
+.continuar span {
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .info-pessoais {
@@ -1667,4 +1679,31 @@ footer {
 }
 .frete .time strong {
   display: inline;
+}
+
+.lista-pedido {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.lista-pedido .compra {
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #DCDCDC;
+  padding: 23px;
+  gap: 20px;
+}
+.lista-pedido .compra .valor {
+  min-width: 100%;
+  justify-content: center;
+}
+.lista-pedido .compra .valor .valor-item {
+  width: 100%;
+  margin-right: 0;
+  padding: 0;
+}
+.lista-pedido .compra .valor .valor-total {
+  width: 100%;
+  text-align: end;
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */

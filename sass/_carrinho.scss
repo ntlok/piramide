@@ -138,7 +138,7 @@
   .valor {
     display: flex;
     margin-left: auto;
-    min-width: 300px;
+    min-width: 280px;
     justify-content: flex-end;
 
     .valor-item {
@@ -278,7 +278,14 @@
     font-weight: 700;
 
     cursor: pointer;
-    filter: brightness(.9);
+
+    span {
+      font-size: 14px;
+    }
+
+    &:hover {
+      filter: brightness(.9);
+    }
   }
 
 }
