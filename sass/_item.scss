@@ -1,0 +1,353 @@
+.item-content {
+  margin-top: 100px;
+  padding: 0 3rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .8rem;
+
+  img {
+    width: 100%;
+  }
+}
+
+.item-details {
+  max-width: 530px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  .desconto {
+    margin-top: 10px;
+
+    span {
+      font-size: 14px;
+
+      &:first-child {
+        text-decoration: line-through;
+        font-weight: 300;
+      }
+
+      &:last-child {
+        font-weight: 500;
+        color: red;
+      }
+    }
+
+  }
+
+  .price {
+    line-height: 28px;
+  }
+
+  .parcela {
+    margin-top: 5px;
+    font-weight: 300;
+  }
+
+  p {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .size {
+    display: flex;
+    gap: 10px;
+
+    span {
+      padding: 8px;
+      border: 1px solid black;
+      border-radius: 10px;
+      width: 50px;
+      height: 40px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+  .tabelas {
+    display: flex;
+    margin-top: 20px;
+
+    .medidas {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-right: 10px;
+      border-right: 2px solid black;
+    }
+
+    .modelo {
+      padding-left: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  .comprar {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+
+    button {
+      display: flex;
+      align-items: center;
+      height: 80px;
+      padding: 1rem;
+      cursor: pointer;
+      border: none;
+
+      &:first-child {
+        background: #000;
+        color: white;
+        font-weight: 500;
+        flex: 1;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'Readex Pro';
+      }
+
+      &:last-child {
+        border: 1px solid #000;
+        width: 5rem;
+        justify-content: center;
+        background-color: white;
+
+        img {
+          width: 25px;
+        }
+      }
+    }
+  }
+
+  .frete {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: #EDEDED;
+    margin-top: 20px;
+
+    img {
+      padding-right: 10px;
+    }
+
+    span {
+      font-size: 14px;
+      padding-left: 10px;
+      border-left: 1px solid black;
+    }
+
+    input {
+      margin-left: auto;
+      background: transparent;
+      border: none;
+      font-size: 18px;
+      width: 100px;
+
+      text-align: right;
+      margin-right: 10px;
+
+      &::placeholder {
+        font-weight: 700;
+        color: #000;
+        font-style: 18px;
+      }
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .description,
+  .materia-prima {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid black;
+  }
+
+
+}
+
+.conjunto {
+  padding: 0 3rem;
+
+  h2 {
+    font-size: 28px;
+    padding: 10px 0;
+    position: relative;
+    display: flex;
+    margin: 50px 0;
+
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 2px;
+      background-color: #000000;
+      left: 0;
+      bottom: -10px;
+    }
+  }
+
+  .combo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .item {
+    max-width: 340px;
+    width: 100%;
+
+    &>img {
+      width: 100%;
+    }
+
+    h3 {
+      line-height: 26px;
+      font-weight: 300;
+      padding-bottom: 0.5rem;
+    }
+
+    .details {
+
+
+      .price {
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid black;
+        width: 100%;
+        max-width: 240px;
+      }
+
+      span {
+
+        &:first-child {
+          padding-right: 10px;
+          border-right: 1px solid black;
+        }
+
+        &:last-child {
+          padding-left: 10px;
+          font-weight: 300;
+        }
+      }
+    }
+
+    .size {
+      display: flex;
+      gap: 10px;
+
+      span {
+        padding: 8px;
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 50px;
+        height: 40px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+
+    p {
+      margin-top: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .combo-price {
+    width: 400px;
+    height: 100%;
+    align-self: start;
+
+    .soma-items {
+      width: 100%;
+      height: 500px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      background: #F0EDF1;
+
+      p {
+        font-weight: 700;
+        font-style: 22px;
+        line-height: 27px;
+        margin-bottom: .5rem;
+      }
+
+      .soma {
+        font-weight: 300;
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+      }
+
+      .price {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 29px;
+        margin-bottom: 10px;
+      }
+
+      .parcela {
+        font-size: 14px;
+        font-weight: 300;
+      }
+
+      // color: #000;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 2rem;
+      margin-top: 2rem;
+      height: 5rem;
+      width: 100%;
+      background: #00b86b;
+      border: none;
+      cursor: pointer;
+      transition: all 200ms ease;
+
+      font-weight: 700;
+      color: white;
+
+      &:hover {
+        filter: brightness(.9);
+      }
+
+      span {
+        font-size: 18px;
+      }
+    }
+  }
+
+
+
+
+}
